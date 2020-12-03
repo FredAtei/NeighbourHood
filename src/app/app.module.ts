@@ -12,6 +12,14 @@ import { SignupComponent } from './signup.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { Routes, RouterModule } from '@angular/router';
+
+
+const appRoutes: Routes = [
+  { path: '', component: HomepageComponent },
+  { path: 'about',      component: AboutComponent },
+  { path: 'contact',      component: ContactComponent},
+];
 
 
 @NgModule({
@@ -28,6 +36,10 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    ),
   ],
   providers: [
     ApiService,
