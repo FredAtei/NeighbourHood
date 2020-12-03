@@ -9,6 +9,9 @@ import { AuthGuard, AuthService, AuthInterceptor } from './auth.service';
 import { ListComponent } from './list.component';
 import { LoginComponent } from './login.component';
 import { SignupComponent } from './signup.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -17,6 +20,9 @@ import { SignupComponent } from './signup.component';
     ListComponent,
     LoginComponent,
     SignupComponent,
+    HomepageComponent,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
