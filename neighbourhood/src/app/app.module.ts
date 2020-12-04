@@ -14,6 +14,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
+import { BusinessComponent } from './business/business.component';
+import { HoodComponent } from './hood/hood.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { UserComponent } from './user/user.component';
     NavbarComponent,
     HomeComponent,
     UserComponent,
+    BusinessComponent,
+    HoodComponent,
   ],
   imports: [
     BrowserModule,
