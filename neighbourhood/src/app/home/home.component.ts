@@ -6,10 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  showForm=false;
+  showUsers=false;
 
-  constructor() { }
+ 
 
-  ngOnInit(): void {
+  showDetails() {
+    this.showForm = !this.showForm
+    
+  }  
+  showUsersList(){
+    this.showUsers= !this.showUsers
+  }
+  constructor( ) { }
+
+  ngOnInit(){
+      this.showForm = false;
+      this.showUsers =false;
+     
   }
 
 }
