@@ -1,1 +1,22 @@
-<p>hood works!</p>
+<div class="container">
+    <h4 class="text-center">Displayed hoods</h4>
+    <div class="row">
+        <div class="col-md-8">
+            <mat-card *ngFor="let hood of hood" style="margin: 10px; background-color: powderblue; color: black;">
+                <mat-card-header>
+                    <mat-card-title>{{hood.name}}</mat-card-title>
+                    <mat-card-subtitle> business: {{hood.business}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <img src="{{hood.image}}" alt="image" style="width: 500px; height: 500px;" class="img-fluid">
+                    <p>{{hood.description}}</p>
+                </mat-card-content>
+                <mat-card-footer>
+                    <p>Location: {{hood.location}}</p>
+                    <p>Price: {{hood.price}}</p>
+                </mat-card-footer>
+            </mat-card>
+                
+        </div>
+    </div>
+</div>

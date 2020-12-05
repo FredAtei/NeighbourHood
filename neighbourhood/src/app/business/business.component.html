@@ -1,1 +1,20 @@
-<p>business works!</p>
+<div class="container" style="height: 95vh; margin-top: 100px;">
+    <h2 class="text-center">Our Business</h2>
+
+    <div class="row">
+
+        <div class="col-md-4 d-flex " style="width: 25rem;" *ngFor="let business of business; let i=index" [class.active]="i==currentIndex" (click)="setActiveCat(category,i)">
+            
+            <mat-card   style="margin: 10px; background-color: #dee2ff; color: black;">
+                
+                <mat-card-content>
+                    <img mat-card-lg-image src="../../assets/holder.png" alt="image" class="img-fluid" style="width: 100%">
+                    <mat-card-title>{{business.catname}}</mat-card-title>
+                </mat-card-content>
+               
+            </mat-card>
+            
+        </div>
+    </div>
+</div>
+
