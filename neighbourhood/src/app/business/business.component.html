@@ -3,7 +3,7 @@
 
     <div class="row">
 
-        <div class="col-md-4 d-flex " style="width: 25rem;" *ngFor="let business of business; let i=index" [class.active]="i==currentIndex" (click)="setActiveCat(category,i)">
+        <div class="col-md-4 d-flex " style="width: 25rem;" *ngFor="let business of business; let i=index" [class.active]="i==currentIndex" (click)="setActiveCat(business,i)">
             
             <mat-card   style="margin: 10px; background-color: #dee2ff; color: black;">
                 
