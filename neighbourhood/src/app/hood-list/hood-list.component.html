@@ -2,7 +2,7 @@
   <h2 class="text-center">Houses in the neighbourhood</h2>
 
   <div class="row">
-    <div class="col-md-4 d-flex " style="width: 100%;" *ngFor="let hood of hood; let i=index"
+    <div class="col-md-4 d-flex " style="width: 100%;" *ngFor="let house of houses; let i=index"
       [class.active]="i==currentIndex" (click)="setActiveHouse(house,i)">
       <mat-card style="margin: 10px; background-color: #dee2ff; color: black;">
         <mat-card-header>
