@@ -1,0 +1,54 @@
+<div class="container">
+  <h2 class="text-center">Houses in the neighbourhood</h2>
+
+  <div class="row">
+    <div class="col-md-4 d-flex " style="width: 100%;" *ngFor="let hood of hood; let i=index"
+      [class.active]="i==currentIndex" (click)="setActiveHouse(house,i)">
+      <mat-card style="margin: 10px; background-color: #dee2ff; color: black;">
+        <mat-card-header>
+          <mat-card-title>{{house.name}}</mat-card-title>
+          <mat-card-subtitle> Category: {{house.hood.catname}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <img mat-card-lg-image src="{{house.image}}" alt="image" class="img-fluid" style="width: 100%">
+        </mat-card-content>
+        <mat-card-footer style="padding: 5px;">
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{house.location}}</p>
+          <p>Price: {{house.price}}</p>
+          <button mat-raised-button><a routerLink="/houses/{{ currentHouse.id }}">View More</a></button>
+
+        </mat-card-footer>
+      </mat-card>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="modal fade" id="myModal" style="margin: 10px; background-color: #dee2ff; color: black;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div *ngIf="currentHouse">
+              <div class="modal-header">
+                <h2>{{ currentHouse.name}}</h2>
+                <h4>{{currentHouse.hood}}</h4>
+              </div>
+              <div class="modal-body">
+                <img src="{{currentHouse.image}}" alt="img" style="height: 400px; width: 400px;">
+                <h5>{{currentHouse.description}}</h5>
+              </div>
+              <div class="modal-footer">
+                <p>Location: {{currentHouse.location}}</p>
+                <p>Posted on: {{currentHouse.date_added}}</p>
+                <button mat-raised-button><a class="badge badge-warning"
+                    routerLink="/houses/{{ currentHouse.id }}">Edit</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -16,6 +16,8 @@ import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { BusinessComponent } from './business/business.component';
 import { HoodComponent } from './hood/hood.component';
+import { HoodFormComponent } from './hood-form/hood-form.component';
+import { HoodListComponent } from './hood-list/hood-list.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { HoodComponent } from './hood/hood.component';
     UserComponent,
     BusinessComponent,
     HoodComponent,
+    HoodFormComponent,
+    HoodListComponent,
   ],
   imports: [
     BrowserModule,
