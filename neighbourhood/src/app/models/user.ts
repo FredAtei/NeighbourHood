@@ -1,6 +1,6 @@
 export interface User {
   url: string;
   name: string;
-  email: string;
+  neighbourhood: number;
   is_staff: boolean;
 }

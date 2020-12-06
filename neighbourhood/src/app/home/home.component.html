@@ -1,19 +1,19 @@
 <div class="container-fluid">
   <div class="top">
       <div class="card">
+        <mat-toolbar color="primary">A̲c̲c̲o̲u̲n̲t̲ ̲I̲n̲f̲o̲ ̲&̲ ̲S̲e̲t̲t̲i̲n̲g̲s̲</mat-toolbar>
 
-        <h6 style="padding-top: 0; font-size: 20px;">A̲c̲c̲o̲u̲n̲t̲ ̲I̲n̲f̲o̲ ̲&̲ ̲S̲e̲t̲t̲i̲n̲g̲s̲</h6>
         <div class="name">
-          <span>Name:</span><br><br><span>Role:</span><br><br><span>Neighbouhood-Name:</span><br><br><span>Users:</span>
+          <span>Name:</span><br><br><span>Role:</span><br><br><span>Neighbouhood-Name:</span><br><br>
         </div>
 
-        <button (click) = "showDetails()"> Create a neighbourhood</button>
+        <button (click) = "showDetails()" mat-raised-button type="submit" color="primary"> Create a neighbourhood</button>
             <br>
-            <button (click) = "showDetails()"> View neighbourhoods</button>
+            <button (click) = "showDetails()" mat-raised-button type="submit" color="primary"> View neighbourhoods</button>
             <br>
-            <button (click) = "showUsersList()"> View all users</button>
+            <button (click) = "showUsersList()" mat-raised-button type="submit" color="primary"> View all users</button>
             <br>
-            <button (click) = "showDetails()"> Add Business</button>
+            <button (click) = "showDetails()" mat-raised-button type="submit" color="primary"> Add Business</button>
         
         <!-- Modal -->
         <div class="modal fade" id="deleteProfile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
