@@ -18,7 +18,7 @@ import { BusinessComponent } from './business/business.component';
 import { HoodComponent } from './hood/hood.component';
 import { HoodFormComponent } from './hood-form/hood-form.component';
 import { HoodListComponent } from './hood-list/hood-list.component';
-
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +31,7 @@ import { HoodListComponent } from './hood-list/hood-list.component';
     HoodComponent,
     HoodFormComponent,
     HoodListComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
