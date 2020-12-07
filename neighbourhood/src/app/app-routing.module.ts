@@ -10,7 +10,6 @@ import { PostNeighbourComponent } from './post-neighbour/post-neighbour.componen
 import { LogoutComponent } from './logout/logout.component';
 
 
-
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch:'full'},
   {path:'home', component:HomeComponent},
@@ -20,7 +19,7 @@ const routes: Routes = [
   {path:'register', component:RegisterComponent},
   {path:'post', component:PostNeighbourComponent},
   {path:'logout', component:LogoutComponent},
-
+  
   { path: 'user/:id', component: UserComponent },
   
 ];
