@@ -13,6 +13,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { UserComponent } from './user/user.component';
     NavbarComponent,
     HomeComponent,
     UserComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
